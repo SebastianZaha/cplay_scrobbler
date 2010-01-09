@@ -1,0 +1,43 @@
+== Description ==
+
+  Plugin for the 'cplay' music player that scrobbles played tracks to last.fm
+
+  http://sebi.tla.ro/cplay_scrobbler
+
+
+== Install ==
+
+  To install, paste the contents of this file in your ~/.cplayrc and fill in 
+  your username and password.
+
+  If you play a track for more than half its length, it will be marked as a 
+  'listened' track. When the next track starts playing, the former will be 
+  submitted to last.fm.
+
+
+== Requirements ==
+
+  scrobbler - http://exhuma.wicked.lu/projects/python/scrobbler/
+
+
+== Miscellaneous ==
+
+  The plugin will only try submitting a track once. If it cannot (for reasons like no
+  internet connection, scrobbler website down, etc) then it will NEVER try again.
+
+  Also, the last track you listen to before you quit cplay will NOT be submitted.
+      
+  Tracks without ID3 tags will NOT be submitted.
+
+  These limitations will hopefully be corrected in the future :)
+
+
+== Author ==
+
+  Sebastian Zaha <grimdonkey@gmail.com>
+  http://sebi.tla.ro
+
+
+== License ==
+
+  All code licensed MIT (see COPYING).
