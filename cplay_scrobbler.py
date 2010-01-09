@@ -113,5 +113,5 @@ def lastfm_playing():
 def lastfm_now_playing():
     try:
         if not scrobbler.SESSION_ID: lastfm_login()
-        scrobbler.now_playing(playing['artist'], playing['track'], playing['length'])
+        scrobbler.now_playing(playing['artist'], playing['track'], length = playing['length'])
     except: pass
